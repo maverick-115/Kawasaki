@@ -16,6 +16,7 @@ html {
   font-family: "Roboto Slab", serif;
   scroll-behavior: smooth;
 }
+/*Header*/
 header {
   position: relative;
   display: flex;
@@ -74,4 +75,54 @@ header .location {
   text-decoration: none;
   color: var(--black);
   text-align: center;
+}
+/*Main*/
+/*Slider de ofertas*/
+.ofertas__slider-container {
+  width: 27.5rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -28.5rem;
+  }
+  45% {
+    margin-left: -28.5rem;
+  }
+
+  50% {
+    margin-left: -57rem;
+  }
+  70% {
+    margin-left: -57rem;
+  }
+
+  75% {
+    margin-left: -85.5rem;
+  }
+  100% {
+    margin-left: -85.5rem;
+  }
+}
+.ofertas__card {
+  animation: cambio 10s infinite alternate linear;
+  overflow-x: scroll;
+  display: flex;
+  gap: 1.5rem;
+  width: 400%;
+  height: auto;
+}
+
+.ofertas__card img {
+  width: 27rem;
+  height: 10rem;
 }
