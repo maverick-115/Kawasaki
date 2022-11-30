@@ -1,0 +1,63 @@
+/* html {
+  height: 100%;
+} */
+
+body {
+  height: -webkit-fill-available;
+  min-height: 100vh;
+}
+.header__menu {
+  justify-content: flex-start;
+}
+.header__menu__button {
+  margin: 2rem;
+}
+.shadow {
+  width: calc((100% - 34rem) / 2);
+  height: 12rem;
+}
+.ofertas__slider-container {
+  width: 34rem;
+  margin-bottom: 0.5rem;
+}
+.ofertas__card img {
+  width: 34rem;
+  height: 12rem;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -35.5rem;
+  }
+  45% {
+    margin-left: -35.5rem;
+  }
+
+  50% {
+    margin-left: -70.5rem;
+  }
+  70% {
+    margin-left: -70.5rem;
+  }
+
+  75% {
+    margin-left: -105rem;
+  }
+  100% {
+    margin-left: -105rem;
+  }
+}
+.destacados__card {
+  width: 30%;
+  min-width: 30%;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}

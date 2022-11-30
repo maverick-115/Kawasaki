@@ -1,0 +1,243 @@
+:root {
+  /* Colores */
+  --black: #000000;
+  --grey: #3e432e;
+  --off-green: #abdcb9;
+  --just-green: #46e516;
+  --off-white: #e9e9e9;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(100deg, var(--black) 30%, var(--just-green) 80%);
+  height: 100vh;
+}
+/*Header*/
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 32rem;
+  height: 10rem;
+  background: linear-gradient(90deg, var(--just-green) 30%, var(--black) 80%);
+}
+.upperHeader {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header img {
+  width: 14rem;
+  height: 3rem;
+  margin-top: 0rem;
+}
+header .location {
+  font-size: 2.35rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+  color: var(--just-green);
+}
+.underline {
+  width: 98%;
+  height: 0.5rem;
+  margin: 0 auto;
+  background: linear-gradient(90deg, var(--black) 30%, var(--just-green) 80%);
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__menu__button {
+  display: block;
+  padding: 0.3rem;
+  width: 8rem;
+  height: 2.8rem;
+  background-color: var(--off-white);
+  box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+  text-align: center;
+}
+/*Main*/
+main {
+  height: auto;
+}
+.shadow {
+  width: calc((100% - 27.5rem) / 2);
+  height: 10rem;
+  position: absolute;
+  background-color: #000000;
+}
+/*Slider de ofertas*/
+.ofertas__slider-container {
+  width: 27.5rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -28.5rem;
+  }
+  45% {
+    margin-left: -28.5rem;
+  }
+
+  50% {
+    margin-left: -57rem;
+  }
+  70% {
+    margin-left: -57rem;
+  }
+
+  75% {
+    margin-left: -85.5rem;
+  }
+  100% {
+    margin-left: -85.5rem;
+  }
+}
+.ofertas__card {
+  animation: cambio 10s infinite alternate linear;
+  overflow-x: scroll;
+  display: flex;
+  gap: 1.5rem;
+  width: 400%;
+  height: auto;
+  overflow: hidden;
+}
+
+.ofertas__card img {
+  width: 27rem;
+  height: 10rem;
+}
+.motos {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.2rem;
+}
+.motos h2 {
+  color: var(--off-green);
+}
+.motos__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.motos__card {
+  width: 90%;
+  min-width: 90%;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  text-align: center;
+  background-color: var(--off-white);
+  margin-bottom: 1.5rem;
+}
+.motos__card a {
+  width: 100%;
+  text-decoration: none;
+
+  margin: 0 auto;
+}
+.motos__card img {
+  width: 100%;
+  height: auto;
+}
+.motos__card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--black);
+  line-height: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.motos__card p {
+  width: 20rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  background-color: var(--just-green);
+  color: var(--off-white);
+  border-radius: 0.3rem;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+.motos__card .fichaTecnica__table-container {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 00.5rem;
+  justify-content: center;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(3, 2.9rem);
+  grid-gap: 0.1rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--black);
+  color: #000000;
+  background-color: var(--off-green);
+}
+.table-cell {
+  padding: 0.5rem 0rem 0rem 1rem;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+footer {
+  width: 100%;
+  height: 2.2rem;
+  position: fixed;
+  bottom: 0;
+  box-shadow: inset 0 1.4rem 1.4rem -0.7rem #404040;
+  background-image: linear-gradient(to bottom, #000000 0%, #69be28 100%);
+}
+footer .footer__contacto-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.footer__contacto-container a {
+  color: #000000;
+  display: contents;
+  text-decoration: none;
+}
+.contacto {
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  width: 33%;
+}

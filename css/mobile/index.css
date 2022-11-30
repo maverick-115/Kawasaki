@@ -16,6 +16,10 @@ html {
   font-family: "Roboto Slab", serif;
   scroll-behavior: smooth;
 }
+body {
+  background: linear-gradient(100deg, var(--black) 30%, var(--just-green) 80%);
+  height: 100vh;
+}
 /*Header*/
 header {
   position: relative;
@@ -79,7 +83,12 @@ header .location {
 /*Main*/
 main {
   height: auto;
-  background: linear-gradient(100deg, var(--black) 30%, var(--just-green) 80%);
+}
+.shadow {
+  width: calc((100% - 27.5rem) / 2);
+  height: 10rem;
+  position: absolute;
+  background-color: #000000;
 }
 /*Slider de ofertas*/
 .ofertas__slider-container {
@@ -87,6 +96,7 @@ main {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  margin-bottom: 0.5rem;
 }
 @keyframes cambio {
   0% {
@@ -135,6 +145,9 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 2.2rem;
+}
+.destacados h2 {
+  color: var(--off-green);
 }
 .destacados__card-container {
   display: flex;
